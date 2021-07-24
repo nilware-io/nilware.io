@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<title>Summer Camp 2014</title>
+
+	<style type="text/css">
+	* {
+		margin:0;
+		padding:0;
+	}
+
+	html, body {
+		width:100%;
+		height:100%;
+	}
+
+	body {font-family:sans-serif;}
+
+	body > div{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:120%;
+		background:transparent center no-repeat;
+		background-size:cover;
+	}
+
+	#img0 {
+		background-image:url(paralia-2.JPG);
+	}
+
+	#img1 {
+		background-image:url(axladi-3.JPG);
+		height: 50%;
+		background-position-y: 41%;
+	}
+
+	#img2 {
+		background-image:url(paralia-1.JPG);
+	}
+
+	#img3 {
+		background-image:url(poserbeach-3.JPG);
+	}
+
+	#img4 {
+		background-image:url(poserbeach-2.JPG);
+		width: 50%;
+		background-position-x: 56%;
+	}
+
+	#img5 {
+		background-image:url(poserbeach-1.jpg);
+		left: 50%;
+		width:50%;
+		height:50%;
+	}
+
+	#img6 {
+		background-image:url(paralia-3.JPG);
+		left: 50%;
+		top: 50%;
+		width:50%;
+		height:50%;
+	}
+
+	#img7 {
+		background-image:url(poserbeach-3.JPG);
+	}
+
+	#img8 {
+		background-image:url(punk-2.jpg);
+		background-position: 100% 0%;
+	}
+
+	#img9 {
+		background-image:url(punk-1.jpg);
+		height: 50%;
+		background-position-y: 40%;
+	}
+
+
+	.imgc {
+		top: inherit;
+		bottom: 0;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.imgc > div {
+		background-size: cover;
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:100vw;
+		height:100vh;
+	}
+
+	#img10 {
+		background-image:url(punk-3.jpg);
+	}
+
+	#img11 {
+		background-image:url(paralia-4.JPG);
+	}
+
+	#img12 {
+		background-image:url(axladi-1.jpg);
+		background-position-x: 90%;
+	}
+
+	#img13 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		background-image:url(food-0.jpg);
+		height: 50%;
+		background-position-y: 63%;
+		text-align: center;
+		text-shadow: 0 0 15px rgba(0,0,0,0.9);
+		font-size: 6vmin;
+		color: white;
+	}
+
+
+	#img14 {
+		background-image:url(ampelaki-8.JPG);
+		background-position-y: 100%;
+	}
+
+	#img15 {
+		background-image:url(ampelaki-6.JPG);
+		background-position-y: 100%;
+	}
+
+	#img16 {
+		background-image:url(axladi-5.JPG);
+	}
+
+	#img17 {
+		background-image:url(paralia-0.JPG);
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		height: 50%;
+		text-align: center;
+		text-shadow: 0 0 15px rgba(0,0,0,0.9);
+		font-size: 6vmin;
+		color: white;
+	}
+
+	#img18 {
+		background-image:url(paralia-1.JPG);
+	}
+
+	#img19 {
+		background-image:url(axladi-4.JPG);
+	}
+
+	#img20 {
+		background-image:url(axladi-0.jpg);
+	}
+
+	#razz {
+		margin-top: 1vh;
+		max-height: 20vh;
+		margin-bottom: 1vh;
+		border-radius: 100em;
+	}
+
+	#intro, #intro-2, #outro {
+		text-align: center;
+		marign-top: 2em;
+	}
+
+	#outro-2bg {
+		background: black;
+	}
+
+	#outro-2bg.skrollable-after, #outro-2.skrollable-after {
+		visibility: visible;
+		display: flex;
+		position: fixed;
+	}
+
+	body, h1, h2, h3 {
+		font-family: "Courier New";
+		font-weight: 100;
+	}
+
+	.monospace {
+		font-family: "monospace";
+	}
+
+	.italic {
+		font-style: italic;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	p {margin:1em 0;}
+
+	
+	#text-5 h1, #text-6 h2 {
+		text-align: center;
+	}
+
+	#text-3 h1, #text-4 h1, #outro, #outro-2 {
+		color: #eee;
+		text-shadow: 0 0 15px rgba(0,0,0,0.9);
+	}
+
+	#text-4 h1 {
+		text-align: center;
+	}
+
+	#outro-2 {
+		text-align: center;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		width: auto;
+		height: auto;
+		bottom:0;
+		right:0;
+		padding: 2em;
+	}
+
+	.skrollable-after, .skrollable-before {
+		visibility: hidden;
+	}
+
+	.skrollable {
+		-webkit-transform: translatez(0);
+	    -moz-transform: translatez(0);
+	    -ms-transform: translatez(0);
+	    -o-transform: translatez(0);
+	    transform: translatez(0);
+	}
+	</style>
+</head>
+
+<body>
+
+	<div id="img0" data-0="transform:translate(0,0%);" data-120p="transform:translate(0,-100%);">
+	</div>
+
+	<div id="intro" data-0="opacity:1;top:6%;transform:rotate(0deg);transform-origin:0 0;" data-50p="opacity:0;top:-10%;">
+		<h2>You are invited into the <span class="italic">amazing</span></h2>
+		<br /> <br />
+		<span class="monospace">ØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØ</span>
+		<h1>NILLWARE SUMMER&nbsp;CAMP 2014</h1>
+		<span class="monospace">ØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØ</span>
+		<h2>&nbsp;</h2>
+		<h2>Scroll down to find out more~</h2>
+	</div>
+
+	<div id="img2" data-0p="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-210p>
+	</div>
+
+
+	<div id="img1" data-10p="transform:translate(0,200%);" data-135p="transform:translate(0,-200%)">
+	</div>
+
+	<div id="intro-2" data-80p="opacity:0;top:14%;transform:rotate(0deg);transform-origin:0 0;" data-130p="opacity:1;top:12%;" data-200p="opacity:0;top:-8%;">
+		<h1>Last year, we gathered spontaneously</h1>
+		<h1>&nbsp;</h1>
+		<h2>And it was quite fun!</h2>
+	</div>
+
+	<div id="img3" data-150p="opacity:0;" data-200p="opacity:1" data-280p>
+	</div>
+
+	<div id="img8" data-279p="opacity:0;" data-280p="opacity:1;" data-490p>
+	</div>
+
+	<div id="img4" data-220p="opacity:0" data-250p="opacity:1" data-300p="opacity:1" data-330p="opacity:0">
+	</div>
+
+	<div id="img5" data-230p="opacity:0" data-270p="opacity:1" data-320p="opacity:1" data-350p="opacity:0">
+	</div>
+
+	<div id="img6" data-250p="opacity:0" data-280p="opacity:1" data-330p="opacity:1" data-370p="opacity:0">
+	</div>
+
+	<div id="text-3" data-350p="opacity:0;transform:translate(2em,35%);" data-370p="opacity:1;transform:translate(2em,37.5%);" data-390p="opacity:1;transform:translate(2em,40%);" data-470p="opacity:0;transform:translate(2em,45%);">
+		<h1>&nbsp;&nbsp;There were many<br />interesting new people</h1>
+	</div>
+
+	<div class="imgc" data-430p="height:0%" data-500p="height:100%" data-610p>
+		<div id="img10">
+		</div>
+	</div>
+
+	<div id="text-4" data-480p="opacity:0;transform:translate(2em,35%);" data-520p="opacity:1;transform:translate(2em,37.5%);" data-560p="opacity:1;transform:translate(2em,40%);" data-600p="opacity:0;transform:translate(2em,45%);">
+		<h1>And lots of random happenings</h1>
+	</div>
+
+	<div id="img9" data-420p="transform:translate(0,200%);" data-540p="transform:translate(0,-200%)">
+	</div>
+
+<div class="imgc" data-540p="height:0%" data-600p="height:100%" data-700p>
+		<div id="img11">
+		</div>
+	</div>
+
+	<div class="imgc" data-640p="height:0%" data-700p="height:100%" data-850p>
+		<div id="img12">
+		</div>
+	</div>
+
+	<div id="img14" data-740p="opacity:0" data-840p="opacity:1" data-950p>
+	</div>
+
+	<div id="img13" data-720p="transform:translate(0,200%);" data-840p="transform:translate(0,-200%)">
+		<h1>AND FOOD</h1>
+		<h2>fucktons of it</h2>
+		<h3>(of course)</h3>
+	</div>
+
+	<div id="img15" data-890p="opacity:0" data-950p="opacity:1" data-1060p>
+	</div>
+
+
+<div id="img16" data-980p="opacity:0" data-1050p="opacity:1" data-1220p>
+	</div>
+
+	<div id="img17" data-1080p="transform:translate(0,200%);" data-1240p="transform:translate(0,-200%)">
+		<h1>This year</h1>
+		<h2>It *has* to be even better</h2>		
+	</div>
+
+	<div class="imgc" data-1150p="height:0%" data-1200p="height:100%" data-1500p>
+		<div id="img18">
+		</div>
+	</div>
+
+	<div id="text-5" data-1200p="opacity:0;transform:translate(0em,20%);" data-1230p="opacity:1;transform:translate(0em,22.5%);" data-1240p="opacity:1;transform:translate(0em,25%);" data-1300p="opacity:0;transform:translate(0em,30%);">
+		<h1>So I'm counting on you!</h1>
+	</div>
+
+	<div id="text-6" data-1330p="opacity:0;transform:translate(2em,30%);" data-1370p="opacity:1;transform:translate(2em,32.5%);" data-1390p="opacity:1;transform:translate(2em,35%);" data-1420p="opacity:0;transform:translate(2em,40%);">
+		<h2>To make August 2014 a blast!</h2>
+	</div>
+
+
+<div class="imgc" data-1450p="height:0%" data-1490p="height:100%" data-1590p>
+		<div id="img19">
+		</div>
+	</div>
+
+	<div class="imgc" data-1530p="height:0%" data-1570p="height:100%" data-1800p>
+		<div id="img20">
+		</div>
+	</div>
+
+	<div id="outro"  data-1590p="opacity:0;top:10%;" data-1670p="opacity:1;top:14%;" data-1800p>
+		
+		<br /> <br />
+		<span class="monospace">ØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØ</span>
+		<h1>NILLWARE SUMMER&nbsp;CAMP 2014</h1>
+		<span class="monospace">ØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØØ</span>
+		<h2>&nbsp;</h2>
+		<h2>12 ~ 30 August 2014</h2>
+		<h3>Ampelaki (near Raches, Lamia)</h3>
+
+	</div>
+
+	<div id="outro-2bg"  data-1760p="opacity:0;" data-1800p="opacity:1;" data-end>
+		
+
+
+	</div>
+
+	<div id="outro-2"  data-1800p="opacity:0;" data-1990p="opacity:1;">
+		
+		<h1>Get in touch</h1>
+		<h2>And bring friends along</h2>
+		<div ><img id="razz" src="razz.jpg" /></div>
+
+		<h2>Razz, the dragan</h2>
+		<h2>(you know where to find me)</h2>
+	</div>
+
+	<!--<audio src="loituma-soft.mp3" autoplay />-->
+	<!--<audio src="loituma-hard.mp3" autoplay />-->
+
+	<script type="text/javascript" src="skrollr.min.js"></script>
+
+	<script type="text/javascript">
+	skrollr.init({
+
+		
+	});
+	</script>
+</body>
+
+</html>

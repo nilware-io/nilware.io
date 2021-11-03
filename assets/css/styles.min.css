@@ -11272,6 +11272,6 @@ a.text-dark:focus,a.text-dark:hover {
     display: block;
 }
 
-br {
-    page-break-after: always;
+.page-break {
+    page-break-before: always;
 }

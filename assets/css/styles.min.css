@@ -11271,3 +11271,7 @@ a.text-dark:focus,a.text-dark:hover {
 .people h3 name, people name {
     display: block;
 }
+
+br {
+    page-break-after: always;
+}

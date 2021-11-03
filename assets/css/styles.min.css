@@ -11007,7 +11007,7 @@ a.text-dark:focus,a.text-dark:hover {
     margin-bottom: 16px
 }
 
-.page-footer .social-icons a, .page-header .social-icons a {
+.page-footer .social-icons a, .page-header .social-icons a, .page-header .social-icons input {
     font-size: 18px;
     margin: 0 3px;
     color: #fff;

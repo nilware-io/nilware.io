@@ -11275,3 +11275,33 @@ a.text-dark:focus,a.text-dark:hover {
 .page-break {
     page-break-before: always;
 }
+
+.page-break, .people > div {
+    page-break-before: always;
+}
+
+.about-me, .about-me iframe {
+    max-width: 100%;
+}
+
+#our-values .row p {
+    max-width: 45em;
+    text-align: center;
+}
+
+.actions {
+    padding-bottom: 1em;
+}
+
+#our-logo {
+    padding: 0 0;
+}
+
+#our-name {
+    padding: 0 0 1.5em 0;
+}
+
+#our-name h1 {
+    font-size: 5rem;
+    text-decoration: underline;
+}

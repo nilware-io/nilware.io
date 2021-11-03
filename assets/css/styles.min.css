@@ -11304,8 +11304,13 @@ a.text-dark:focus,a.text-dark:hover {
 #our-name h1 {
     font-size: 5rem;
     text-decoration: underline;
+    font-size: min(19vw, 5rem);
 }
 
 .people i {
     margin: 0 0.3em;
+}
+
+#our-logo img {
+    max-width: 83%;
 }

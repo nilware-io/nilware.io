@@ -11305,3 +11305,7 @@ a.text-dark:focus,a.text-dark:hover {
     font-size: 5rem;
     text-decoration: underline;
 }
+
+.people i {
+    margin: 0 0.3em;
+}

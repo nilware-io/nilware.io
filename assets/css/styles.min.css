@@ -11251,3 +11251,23 @@ a.text-dark:focus,a.text-dark:hover {
     border-bottom: none;
     cursor: help
 }
+
+/* <>< ><> */
+.people img, people img {
+    display: block;
+    margin: auto;
+    max-width: 70%;
+    padding: 1em; 
+}
+
+.people h3, people h3 {
+    display: block !important;
+    margin: auto;
+    line-height: 1.3em;
+    margin-bottom: 0.3em;
+    text-align: center;
+}
+
+.people h3 name, people name {
+    display: block;
+}

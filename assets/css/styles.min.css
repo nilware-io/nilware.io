@@ -11284,9 +11284,10 @@ a.text-dark:focus,a.text-dark:hover {
     max-width: 100%;
 }
 
-#our-values .row p {
+#our-team .our-summary p {
     max-width: 45em;
     text-align: center;
+    font-size: 1.3rem;
 }
 
 .actions {

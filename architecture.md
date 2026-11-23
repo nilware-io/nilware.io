@@ -1,6 +1,6 @@
 # nilware.io architecture (dump of the founding framework drafts)
 
-Audio overview (about 51 minutes): [architecture.m4a](architecture.m4a)
+Audio overview (about 41 minutes): [architecture.m4a](architecture.m4a)
 
 <!-- README.md -->
 

@@ -62,3 +62,11 @@ body{top:0!important}.skiptranslate iframe{display:none!important}
 .vision .card{padding:28px}.vision .card:hover{border-color:var(--line)}
 .vision .card .kicker{margin-bottom:12px}
 .vision .grid3{margin-top:72px}
+.lang{margin-left:24px;font-size:13px;color:var(--line);white-space:nowrap}
+.lang a{color:var(--mute);transition:color .2s}.lang a:hover,.lang a[aria-current]{color:var(--fg)}
+@media(max-width:520px){.nav{gap:10px}.lang{margin-left:auto}.lang+.sound,.translate{margin-left:0}}
+.brand,.sound,.lang{white-space:nowrap;flex-shrink:0}.translate{min-width:0}
+.list span[translate]{color:inherit;margin-right:0}
+/* Google Translate widget: no hover popups or highlights on translated text */
+#goog-gt-tt,.goog-tooltip,.goog-tooltip:hover,.VIpgJd-yAWNEb-L7lbkb{display:none!important}
+.goog-text-highlight,.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q{background:none!important;box-shadow:none!important}

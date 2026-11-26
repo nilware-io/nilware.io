@@ -62,6 +62,12 @@ body{top:0!important}.skiptranslate iframe{display:none!important}
 .vision .card{padding:28px}.vision .card:hover{border-color:var(--line)}
 .vision .card .kicker{margin-bottom:12px}
 .vision .grid3{margin-top:72px}
+/* the three long vision texts (ownership, care, the AMKE) read as full-width rows: heading left, text right */
+.vision .grid3{grid-template-columns:1fr;gap:56px}
+.vision .grid3 article{display:grid;grid-template-columns:minmax(180px,1fr) 3fr;gap:16px 48px;align-items:start}
+.vision .grid3 article h3{margin-top:0}
+.vision .grid3 article p{margin-top:0;max-width:78ch}
+@media(max-width:800px){.vision .grid3 article{grid-template-columns:1fr}}
 .lang{margin-left:24px;font-size:13px;color:var(--line);white-space:nowrap}
 .lang a{color:var(--mute);transition:color .2s}.lang a:hover,.lang a[aria-current]{color:var(--fg)}
 @media(max-width:520px){.nav{gap:10px}.lang{margin-left:auto}.lang+.sound,.translate{margin-left:0}}

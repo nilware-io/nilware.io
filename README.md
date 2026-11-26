@@ -2,7 +2,7 @@
 
 Static site for GitHub Pages. Fonts: Roboto and Roboto Mono (Google Fonts).
 
-Files: index.html, style.css, favicon.svg, og-image.png (1200x630 social preview), railway_drone.mp3, CNAME (nilware.io).
+Files: index.html, style.css, favicon.svg, og-image.png / og-image-en.png (1200x630 social previews, Greek / English), railway_drone.mp3, CNAME (nilware.io).
 
 Deploy: GitHub Pages serves branch `master` at `/` (custom domain nilware.io).
 Push changes to `master`. The `main` branch only holds a redirect to the
